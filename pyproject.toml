@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "sports-rules-mcp"
-version = "0.1.0"
+version = "0.2.0"
 description = "체육 수업용 스포츠 규칙 검색 MCP 서버 (축구, 농구, 배구 등 9종목)"
 readme = "README.md"
 license = { text = "MIT" }
