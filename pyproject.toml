@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sports-rules-mcp"
+version = "0.1.0"
+description = "체육 수업용 스포츠 규칙 검색 MCP 서버 (축구, 농구, 배구 등 9종목)"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["mcp", "sports", "pe", "education", "체육", "스포츠"]
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.scripts]
+sports-rules-mcp = "sports_rules_mcp.__main__:run"
+
+[project.urls]
+Homepage = "https://github.com/godwithahj/sports-rules-mcp"
+Repository = "https://github.com/godwithahj/sports-rules-mcp"
+
+[tool.hatch.build.targets.wheel]
+packages = ["sports_rules_mcp"]
