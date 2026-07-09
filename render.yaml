@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: sports-rules-mcp
+    runtime: python
+    buildCommand: pip install -e .
+    startCommand: python http_server.py
+    plan: free
